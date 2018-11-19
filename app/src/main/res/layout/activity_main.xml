@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/main_pink"
+    >
+
+    <Button
+        android:id="@+id/progress-button"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/home_button"
+        android:backgroundTint="@color/progress_pink"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/things-to-do-now-button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/talking-points-button"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/home_button"
+        android:backgroundTint="@color/talking_orange"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/progress-button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/my-goals-button"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/home_button"
+        android:backgroundTint="@color/goal_blue"
+        android:fontFamily="@font/palanquin_dark"
+        android:shadowColor="@color/button_shadow"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/talking-points-button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/things-to-do-now-button"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/home_button"
+        android:backgroundTint="@color/things_purple"
+        android:text="@string/things_to_do"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="145dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="11dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_headspace" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo"
+        app:srcCompat="@drawable/ic_hamburger" />
+
+    <ImageView
+        android:id="@+id/goal-icon"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/my-goals-button"
+        app:layout_constraintEnd_toEndOf="@+id/my-goals-button"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/my-goals-button"
+        app:layout_constraintTop_toTopOf="@+id/my-goals-button"
+        app:layout_constraintVertical_bias="0.24000001"
+        app:srcCompat="@drawable/ic_goal" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="34dp"
+        android:layout_height="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/talking-points-button"
+        app:layout_constraintEnd_toEndOf="@+id/talking-points-button"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="@+id/talking-points-button"
+        app:layout_constraintTop_toTopOf="@+id/talking-points-button"
+        app:srcCompat="@drawable/ic_journal" />
+
+    <TextView
+        android:id="@+id/talking-points-text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/palanquin_dark"
+        android:text="@string/talking_points"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/talking-points-button"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/talking-points-button"
+        app:layout_constraintTop_toTopOf="@+id/talking-points-button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/palanquin_dark"
+        android:text="@string/progress"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress-button"
+        app:layout_constraintEnd_toEndOf="@+id/progress-button"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="@+id/progress-button"
+        app:layout_constraintTop_toTopOf="@+id/progress-button" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progress-button"
+        app:layout_constraintEnd_toEndOf="@+id/progress-button"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/progress-button"
+        app:srcCompat="@drawable/ic_progress_check" />
+
+    <TextView
+        android:id="@+id/my-goals-text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/palanquin_dark"
+        android:text="@string/goals"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/my-goals-button"
+        app:layout_constraintEnd_toStartOf="@+id/goal-icon"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="@+id/my-goals-button"
+        app:layout_constraintTop_toTopOf="@+id/my-goals-button" />
+
+</android.support.constraint.ConstraintLayout>

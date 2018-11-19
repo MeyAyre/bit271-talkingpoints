@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="main_pink">#9634adf1</color>
+    <color name="gradient_pink">#96ff006b</color>
+    <color name="background_color">#c8134048</color>
+    <color name="gradient_blue">#96045d8e</color>
+    <color name="button_shadow">#96536e7e</color>
+    <color name="goal_blue">#34adf1</color>
+    <color name="talking_orange">#c8eab91a</color>
+    <color name="progress_pink">#c8ff006b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="things_purple">#b3ad00ff</color>
+    <color name="dark_grey">#1e2a3d</color>
+</resources>

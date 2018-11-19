@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TalkingPoints</string>
+    <string name="goals">My Goals</string>
+    <string name="talking_points">Talking Points</string>
+    <string name="progress">Progress</string>
+    <string name="things_to_do">Things To Do Now</string>
+    <string name="new_job">Got a New Job</string>
+    <string name="struggling">Struggling</string>
+    <string name="moving">Moving</string>
+    <string name="tags">Tags:</string>
+    <string name="feelings">Moods:</string>
+</resources>
